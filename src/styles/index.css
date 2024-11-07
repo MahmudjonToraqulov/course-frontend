@@ -1,0 +1,363 @@
+:root{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+    --primary-background-color: #EDE8F5;
+    --secondary-background-color:#f7f7f7;
+    
+    --primary-text-color:#3D52A0;
+    --secondary-text-color:#4b4c53;
+  
+    --primary-border-color:#4b4c53;
+    --box-background-color: #fff;
+    --box-background-color-2: #f0eaea;
+  
+    --button-solid-background-color:#7091E6;
+    --button-solid-text-color:#f5f8f7;
+  
+    --button-outlined-background-color:transparent;
+    --button-outlined-text-color:#000;
+
+    --button-bg-hover-color: #3D52A0;
+
+    --webkit-primary-header-shadow: -2px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    --moz-primary-header-shadow: -2px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    --primary-header-shadow: -2px 7px 8px 0px rgba(34, 60, 80, 0.2);
+
+    --webkit-primary-box-shadow: 1px 0px 14px 0px rgba(34, 60, 80, 0.22);
+    --moz-primary-box-shadow: 1px 0px 14px 0px rgba(34, 60, 80, 0.22);
+    --primary-box-shadow: 1px 0px 14px 0px rgba(34, 60, 80, 0.22);
+
+    --box-background-tag-btn-color: #0fffbf;
+
+    --nav-active-link-color: #5ec7ff!important;
+
+    --user-me-theme: #efeaea;
+
+    --jira-primary-bg-theme: #7091E6;
+    --jira-primary-color-theme: white;
+
+    --input-placeholder-color: #7091E6;
+    --text-btn-light: rgb(230, 230, 239)!important;
+
+
+    
+  }
+  
+  [data-theme="dark"]{
+    --primary-background-color: #141619;
+    --secondary-background-color:#2C2E3A;
+  
+    --primary-text-color: #bcc4fe;
+    --secondary-text-color:#050A44;
+  
+    --primary-border-color:#496dff;
+  
+    --button-solid-background-color:#091d9f;
+    --button-solid-text-color:#fff;
+  
+    --button-outlined-background-color:transparent;
+    --button-outlined-text-color:#fff;
+
+    --button-bg-hover-color: #0f1d79;
+
+    --webkit-header-box-shadow: -2px 7px 8px 0px #fff;
+    --moz-header-box-shadow: -2px 7px 8px 0px #fff;
+    --primary-header-shadow: -2px 7px 8px 0px #a5abed;
+
+    --webkit-primary-box-shadow: 1px 0px 14px 0px #6477f3;
+    --moz-primary-box-shadow: 1px 0px 14px 0px #6679ee;
+    --primary-box-shadow: 1px 0px 14px 0px #6071de;
+
+    --box-background-tag-btn-color: #0fffbf;
+
+    --nav-active-link-color: #5ec7ff!important;
+
+    --user-me-theme: #1b2985;
+
+    --jira-primary-bg-theme: #3c56ff;
+    --jira-primary-color-theme: white;
+
+    --primary-border-color:#4b4c53;
+    --box-background-color: rgb(49, 45, 91);
+    --box-background-color-2: #535da0;
+
+
+    --input-placeholder-color: #535da0;
+
+  
+  }
+  
+  [data-theme="purple"]{
+    --primary-background-color: rgba(24, 16, 40, 1);
+    --secondary-background-color:rgba(44, 36, 70, 1);
+  
+    --primary-text-color:#f2f2f2;
+    --secondary-text-color:#8549a7;
+  
+    --primary-border-color:#ffffff;
+  
+    --button-solid-background-color:#a200ff;
+    --button-solid-text-color:#fdfdfd;
+  
+    --button-outlined-background-color:transparent;
+    --button-outlined-text-color:#fff;
+
+    --button-bg-hover-color: #ab49e4;
+
+    --webkit-primary-header-shadow: -2px 7px 8px 0px rgb(227, 126, 230);
+    --moz-primary-header-shadow: -2px 7px 8px 0px rgb(218, 121, 242);
+    --primary-header-shadow: -2px 7px 8px 0px rgb(211, 114, 243);
+
+    --webkit-primary-box-shadow: 1px 0px 14px 0px rgb(198, 100, 215);
+    --moz-primary-box-shadow: 1px 0px 14px 0px rgb(198, 100, 215);
+    --primary-box-shadow: 1px 0px 14px 0px rgb(198, 100, 215);
+
+    --box-background-tag-btn-color: #0fffbf;
+
+    --user-me-theme: #6e0086;
+
+    --jira-primary-bg-theme: #d209ff;
+    --jira-primary-color-theme: white;
+
+    --primary-border-color:#6e0086;
+    --box-background-color: rgb(52, 12, 64);
+    --box-background-color-2: rgb(72, 40, 81);
+
+
+    --input-placeholder-color: #d000ff;
+
+  }
+
+  nav > a{
+    text-transform: uppercase;
+  }
+
+  nav > a.text-primary{
+    color: var(--nav-active-link-color)!important;
+  }
+
+  .theme-options{
+    display: flex;
+    gap:10px;
+  }
+  
+  .theme-option{
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #theme-dark{
+    background-color: #000;
+    border-color: #fff;
+  }
+
+  #theme-light{
+    background-color: #fff;
+    border-color: #000;
+  }
+
+  #theme-purple{
+    background-color: #954ebe;
+    border-color: #954ebe;
+  }
+
+body{
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+.header-title, .text-main{
+    color: var(--primary-text-color)!important;
+}
+.border-none{
+    border: none!important;
+}
+
+.logo-text{
+    color: var(--primary-text-color);
+}
+
+.text-decoration-none{
+    text-decoration: none!important;
+}
+
+.bg-main{
+    background-color: var(--primary-background-color);
+}
+
+.btn-main{
+    background-color: var(--button-solid-background-color);
+    color: var(--button-solid-text-color);
+    border: 1px solid var(--primary-border-color);
+}
+.table-theme{
+    background-color: var(--box-background-color);
+    padding: 2px;
+}
+.btn-main:hover{
+    background-color: var(--button-bg-hover-color);
+    color: var(--button-solid-text-color);
+}
+.user-me-theme{
+    background-color: var(--user-me-theme);
+}
+.bg-none{
+    background: transparent!important;
+}
+.left-0{
+    left: 0!important;
+}
+
+.text-desc{
+    font-style: 24px;
+    color: var(--primary-text-color);
+}
+
+.bg-shadow-200{
+    background: #556fcd75;
+}
+.tag-green{
+    color: green;
+    background-color: rgb(197, 255, 197);
+}
+.pt-90{
+    padding-top: 100px!important;
+}
+
+.bg-dark-main{
+    background: var(--primary-text-color);
+}
+
+.header{
+    -webkit-box-shadow: var(--webkit-primary-header-shadow);
+    -moz-box-shadow: var(--moz-primary-header-shadow);
+    box-shadow: var(--primary-header-shadow);
+}
+.font-bold{
+    font-weight: bold!important;
+}
+
+.bg-light-primary{
+    background-color: #d2dbff;
+}
+
+.box-bg-theme{
+    background: var(--box-background-color)!important;
+    color: var(--primary-text-color)!important;
+
+}
+
+.box-bg-theme-2{
+    background: var(--box-background-color-2)!important;
+    color: var(--primary-text-color)!important;
+    list-style: none;
+
+}
+.box-shadow{
+    -webkit-box-shadow: var(--webkit-primary-box-shadow);
+    -moz-box-shadow: var(--moz-primary-box-shadow);
+    box-shadow: var(--primary-box-shadow);
+}
+.input-theme{
+    background-color: var(--box-background-color)!important;
+    color: var(--primary-text-color)!important;
+    border: 2px solid var(--primary-border-color)!important;
+}
+.input-theme::placeholder{
+    color: var(--input-placeholder-color);
+}
+.btn-red{
+    background: rgb(200, 0, 0)!important;
+}
+.btn-green{
+    background: green!important;
+}
+.btn-blue{
+    background: blue!important;
+}
+.btn-yellow{
+    background: yellow!important;
+}
+.text-btn-light{
+    color: var(--text-btn-light);
+}
+.ql-toolbar {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ql-container {
+    min-height: 200px;
+  }
+  
+  .ql-editor {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* .ql-editor h1 {
+    color: #007bff;
+  }
+  
+  .ql-editor h2 {
+    color: #28a745;
+  } */
+  
+  .ql-editor a {
+    color: #ff5733;
+    text-decoration: underline;
+  }
+  
+  .ql-editor a:hover {
+    color: #c70039;
+  }
+  #react-tags-listbox{
+    background-color: var(--box-background-color-2);
+    padding: 8px;
+    margin: 8px;
+    color: var(--primary-text-color);
+  }
+#react-tags-listbox div{
+    padding: 4px;
+    cursor: pointer;
+}
+#react-tags-listbox div:hover{
+    background-color: var(--box-background-tag-btn-color);
+    padding: 4px;
+}
+#react-tags > ul{
+    list-style: none;
+    display: flex;
+}
+#react-tags > ul > li > button{
+    background-color: var(--box-background-tag-btn-color);
+    border: none;
+    margin: 4px;
+    padding: 4px 8px; 
+    color: #054f3c;
+    border-radius: 3px;
+}
+#react-tags-input{
+    padding: 4px;
+}
+.jira-btn{
+  background-color: var(--jira-primary-bg-theme);
+  color: var(--jira-primary-color-theme);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 24px!important;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
